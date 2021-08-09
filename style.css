@@ -1,0 +1,262 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    /* font-family: 'Nanum Myeongjo', serif; */
+    color: #444;
+    font-size: 16px;
+}
+ul {
+    list-style-type: none;
+}
+dt {
+    font-weight: 700;
+}
+section h2 {
+    font-size: 20px;
+    font-family: 'Nanum Gothic', serif;
+    color: #5484C1;
+    font-weight: 800;
+}
+h3 {
+    font-family: 'Nanum Gothic', serif;
+}
+.first {
+    font-family: 'Nanum Myeongjo', serif;
+}
+.second {
+    font-size: 35px;
+    color: #5484C1;
+    margin-top: 10px;
+}
+.third {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.fourth {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+#title img {
+    width: 100%;
+    height: 33.33vh;
+    object-fit: cover; 
+}
+.container { 
+    padding: 20px;
+}
+#title h2 {
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+#title .introText p {
+    color: #606060;
+    line-height: 24px;
+}
+#title .introText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 33.33vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+}
+#title .introText .container {
+    font-family:  'Nanum Gothic', sans-serif;
+    font-size: 16px;
+}
+/* welcome */
+#invitation { 
+    background:#EBEBEB;
+    padding: 20px;
+}
+#invitation .container {
+    background: #fff;
+    text-align: center;
+    font-family: 'Nanum Gothic', serif;
+}
+#invitation .container h2 {
+    margin-bottom: 20px;
+}
+#invitation .container p {
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#invitation .container b {
+    font-weight: bold;
+    font-size: 16px;
+}
+/* 연락하기 */
+#call .banner {
+    height: 72px;
+    background: #ccc;
+    background-image: url(images/banner.png);
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    line-height: 72px;
+    font-weight: bold;
+    font-size: 16px;
+    background-size: cover;
+    color: #fff;
+}
+#call .phone {
+    text-align: center;
+    padding: 30px 0;
+}
+#call .phone li {
+    display: inline-block;
+    margin-right: 30px;
+}
+#call .phone li:last-child {
+    margin-right: 0;
+}
+#call .phone li p {
+    margin-top: 10px;
+}
+/* PREVIEW */
+#gallery .container {
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    background: #EFEFEF;
+}
+#gallery h2 {
+    margin-bottom: 20px;
+}
+#gallery figure {
+    width: 100%;
+    height: 200px;
+}
+#gallery figure > img {
+    width: 100%;
+    /* 이미지 뜬거 막음 */
+    display: block;
+    /* 높이값 설정하기 */
+    height: 100%;
+    /* 이미지 찌그러짐 막자-crop시키기 */
+    object-fit: cover;
+}
+#gallery .galleryList {
+    /* 이미지 가로로 나열하기 */
+    display: flex;
+    /* 지정된 크기로 줄내림시키기 */
+    flex-wrap: wrap;
+}
+#gallery .galleryList li {
+    /* 전체 (100% - 칼럼여백) / 칼럼수 */
+    width: calc((100% - 20px) / 3);
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 106px;
+    /* outline: 1px solid; */
+}
+#gallery .galleryList li:nth-child(3n) {
+    margin-right: 0;
+}
+#gallery .galleryList li img {
+    width: 100%;
+    height: 106px;
+    /* 이미지비율달라도 크롭해서 자동맞춤 */
+    object-fit: cover;
+}
+/* ticket */
+/* 비디오 컨테이너= 16 : 9 비율로 제작 */
+.ticket {
+    /* 가로 100% 기준 세로비율 지정 */
+    padding-bottom: 56.25%;
+    background: #ccc;
+    position: relative;
+}
+#ticket {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#ticket h2 {
+    margin-bottom: 20px;
+}
+#ticket p {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#ticket .buy {
+    display: block;
+    background: #5484C1;
+    border-radius: 30px;
+    width: 320px;
+    height: 30px;    
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 0 auto;    
+}
+/* 오시는 길 */
+#location {
+    text-align: center;
+    background: #EFEFEF;
+    padding-top: 40px;
+}
+#location h2 {
+    margin-bottom: 20px;
+}
+#location .appLink {
+    display: flex;
+    /* 중앙정렬*/
+    justify-content: center;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    line-height: 25px;
+}
+/* 마지막 목록만 빼고 마진넣기-축약식 */
+#location .appLink li:not(:last-child) {
+    margin-right: 20px;
+}
+#location .container {
+    padding-top: 30px;
+}
+#location .transfer {
+    text-align: left;
+    line-height: 24px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+#location .transfer dt {
+    margin-top: 20px;
+}
+/* footer */
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #5484C1;
+    color: white;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+footer .address {
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+}
